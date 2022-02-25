@@ -1,12 +1,14 @@
 import './App.css';
 import Header from './Header';
-import Tehnologies from './Tehnologies';
+import Technologies from './Technologies';
+import Footer from './Footer'
 
 function App() {
   return (
     <div className="App">
       <Header />
-     <Tehnologies />
+     <Technologies />
+     <Footer />
     </div>
   );
 }
