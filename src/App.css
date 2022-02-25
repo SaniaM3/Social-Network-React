@@ -12,23 +12,3 @@
   /* grid-gap: 10px; */
 
 }
-
-.header {
-  grid-area: h;
-  background-color: orange;
-
-}
-
-.nav {
-  grid-area: n;
-  background-color: green;
-}
-
-.content {
-  grid-area: c;
-  background-color: cornflowerblue;
-}
-
-.content img {
-  width: 1000px;
-}
