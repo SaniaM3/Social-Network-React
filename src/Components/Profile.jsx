@@ -9,15 +9,15 @@ const Profile = () => {
         <div>
           New Posts
         </div>
-        <div>
-          <div>
-            Post 1
+        <div className='posts'>
+          <div className='item'>
+            <a href = "#">Post 1</a>
           </div>
           <div>
-            Post 2
+          <a href = "#">Post 2</a>
           </div>
           <div>
-            Post 3
+          <a href = "#">Post 3</a>
           </div>
         </div>
       </div>
