@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div>
+        <div className="header">
             <a href = '#home'>Home</a>
             <a href = '#News'>News Feed</a>
             <a href = '#Messages'>Messages</a>

@@ -1,6 +1,6 @@
 const NavBar = () => {
     return(
-        <div>
+        <div className="nav">
             <div>
                 <a href = '#1'>Profile</a>
             </div>
