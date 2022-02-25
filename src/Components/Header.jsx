@@ -1,10 +1,10 @@
-import './Header.css';
+import s from './Header.module.css';
 
 
 const Header = () => {
     return (
-        <div className="header">
-            <div className="logo">
+        <div className={s.header}>
+            <div className={s.logo}>
                 <img src="../img/audiLogo.png"></img>
             </div>
             <a href = '#home'>Home</a>
