@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header';
-import Technologies from './Technologies';
+import Content from './Content';
 import Footer from './Footer'
 import NavBar from './NavBar';
 
@@ -9,8 +9,8 @@ function App() {
     <div className="app-wrapper">
       <Header />
       <NavBar />
-     <Technologies />
-     <Footer />
+      <Content />
+      <Footer />
     </div>
   );
 }
