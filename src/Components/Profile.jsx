@@ -1,4 +1,4 @@
-const Content = () => {
+const Profile = () => {
     return(
         <div className="content">
             <img src ="https://cdn.motor1.com/images/mgl/zZ9Wq/s1/2020-audi-rs6-avant.jpg" className="img__content"></img>
@@ -23,4 +23,4 @@ const Content = () => {
     )
 }
 
-export default Content;
+export default Profile;
