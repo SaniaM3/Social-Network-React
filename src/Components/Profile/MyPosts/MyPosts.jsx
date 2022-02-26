@@ -13,10 +13,10 @@ const MyPosts = (props) => {
           <button>Remove</button>
         </div>
         <div className={s.posts}>
-            <Post message = 'Hi, how are you?' />
-            <Post message = 'HaHaHa' />
-            <Post message = 'Oh, yeaa' />
-            <Post message = 'Hello' />
+            <Post message = 'Hi, how are you?' like = '15' />
+            <Post message = 'HaHaHa' like = '39' />
+            <Post message = 'Oh, yeaa' like = '82' />
+            <Post message = 'Hello' like = '11' />
           </div>
         </div>
     )

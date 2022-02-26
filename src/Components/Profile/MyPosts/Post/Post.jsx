@@ -7,7 +7,7 @@ const Post = (props) => {
           <img src="https://www.publicdomainpictures.net/pictures/270000/nahled/avatar-people-person-business-u.jpg" className={s.avatar}></img>
           <a href = "#">{props.message}</a>
           <div>
-          <span>Like</span>
+          <span>Like {props.like}</span>
           </div>
         </div>
     )

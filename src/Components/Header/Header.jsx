@@ -5,11 +5,8 @@ const Header = () => {
     return (
         <div className={s.header}>
             <div className={s.logo}>
-                <img src="../img/audiLogo.png"></img>
+                <img src='https://www.pngplay.com/wp-content/uploads/6/Audi-Logo-PNG-HD-Quality.png' className={s.logo}></img>
             </div>
-            <a href = '#home'>Home</a>
-            <a href = '#News'>News Feed</a>
-            <a href = '#Messages'>Messages</a>
         </div>
     )
     }
