@@ -31,3 +31,4 @@ export default MyPosts;
 export default MyPosts;
 export default MyPosts;
 export default MyPosts;
+export default MyPosts;
