@@ -4,6 +4,9 @@ import Profile from './Components/Profile/Profile';
 import NavBar from './Components/NavBar/NavBar';
 import Dialogs from './Components/Dialogs/Dialogs';
 import { Route, Routes } from 'react-router-dom';
+import News from './Components/News/News';
+import Music from './Components/Music/Music';
+import Settings from './Components/Settings/Settings';
 
 function App(props) {
   return (
@@ -14,7 +17,10 @@ function App(props) {
       <Routes>
       <Route path='/profile' element={<Profile />}/>
       <Route path='/dialogs' element={<Dialogs/>}/>
+      <Route path='/news' element={<News/>}/>
+      <Route path='/music' element={<Music/>}/>
       <Route path='*' element={<Profile />}/>
+      <Route path='/settings' element={<Settings/>}/>
       </Routes>
       </div>
     </div>
