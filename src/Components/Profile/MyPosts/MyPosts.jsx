@@ -10,6 +10,8 @@ const MyPosts = (props) => {
     {id: 4, message: 'Hello', likesCounte: 11},
 ];
 
+    let postsElement = postData.map( el => <Post message = {el.message} like = {el.likesCounte} />)
+    
     return(
       <div className={s.postsBlock}>
         <div>
@@ -25,10 +27,7 @@ const MyPosts = (props) => {
           
         
         <div className={s.posts}>
-            <Post message = {postData[0].message} like = {postData[0].likesCounte} />
-            <Post message = {postData[1].message} like = {postData[1].likesCounte} />
-            <Post message = {postData[2].message} like = {postData[2].likesCounte} />
-            <Post message = {postData[3].message} like = {postData[3].likesCounte} />
+            {postsElement}
           </div>
         </div>
     )
