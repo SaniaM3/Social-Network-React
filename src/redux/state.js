@@ -6,7 +6,21 @@ const state = {
             {id: 3, message: 'Oh, yeaa', likesCounte: 82},
             {id: 4, message: 'Hello', likesCounte: 11},
           ]
+    },
+    dialogsPage: {
+        dialogs: [
+            {id: 1, name: 'Dimych'},
+            {id: 2, name: 'Sasha'},
+            {id: 3, name: 'Masha'},
+            {id: 4, name: 'Petya'},
+          ],
+        messages:[
+            {id: 1, message: 'Hi'},
+            {id: 2, message: 'Hi are you?'},
+            {id: 3, message: 'Fine, Fuck!!!'},
+          ]
     }
+    
 }
 
 export default state;
