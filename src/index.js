@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import state from './redux/state';
 
 // let postData = [
 //   {id: 1, message: 'Hi', likesCounte: 16},
@@ -24,18 +25,17 @@ import { BrowserRouter } from 'react-router-dom';
 //   {id: 2, message: 'Hi are you?'},
 //   {id: 3, message: 'Fine, Fuck!!!'},
 // ]
-let postData = [
-  {id: 1, message: 'Hi', likesCounte: 16},
-  {id: 2, message: 'Hi, how are you?', likesCounte: 39},
-  {id: 3, message: 'Oh, yeaa', likesCounte: 82},
-  {id: 4, message: 'Hello', likesCounte: 11},
-]
+// let postData = [
+//   {id: 1, message: 'Hi', likesCounte: 16},
+//   {id: 2, message: 'Hi, how are you?', likesCounte: 39},
+//   {id: 3, message: 'Oh, yeaa', likesCounte: 82},
+//   {id: 4, message: 'Hello', likesCounte: 11},
+// ]
 
 ReactDOM.render(
   <React.StrictMode>
-    
     <BrowserRouter>
-    <App postData = {postData} />
+    <App postData = {state.profilePage.postData} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
