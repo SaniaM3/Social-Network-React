@@ -35,7 +35,11 @@ import state from './redux/state';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App postData = {state.profilePage.postData} />
+    <App 
+    postData = {state.profilePage.postData} 
+    dialogs = {state.dialogsPage.dialogs}
+    messages = {state.dialogsPage.messages}
+    />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
