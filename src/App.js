@@ -10,13 +10,20 @@ import Settings from './Components/Settings/Settings';
 
 function App(props) {
   
+  let postData = [
+    {id: 1, message: 'Hi', likesCounte: 16},
+    {id: 2, message: 'Hi, how are you?', likesCounte: 39},
+    {id: 3, message: 'Oh, yeaa', likesCounte: 82},
+    {id: 4, message: 'Hello', likesCounte: 11},
+  ]
+
   return (
     <div className="app-wrapper">
       <Header />
       <NavBar />
       <div className='app-wrapper-content'>
       <Routes>
-      <Route path='/profile/*' element={<Profile />}/>
+      <Route path='/profile/*' element={<Profile postData = {postData}/>}/>
       <Route path='/dialogs/*' element={<Dialogs />} />
       <Route path='/news/*' element={<News/>}/>
       <Route path='/music/*' element={<Music/>}/>
