@@ -19,7 +19,7 @@ const state = {
             {id: 2, message: 'Hi are you?'},
             {id: 3, message: 'Fine, Fuck!!!'},
           ]
-    }
+    },
     
 }
 
