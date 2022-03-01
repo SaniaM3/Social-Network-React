@@ -24,15 +24,18 @@ import { BrowserRouter } from 'react-router-dom';
 //   {id: 2, message: 'Hi are you?'},
 //   {id: 3, message: 'Fine, Fuck!!!'},
 // ]
-
+let postData = [
+  {id: 1, message: 'Hi', likesCounte: 16},
+  {id: 2, message: 'Hi, how are you?', likesCounte: 39},
+  {id: 3, message: 'Oh, yeaa', likesCounte: 82},
+  {id: 4, message: 'Hello', likesCounte: 11},
+]
 
 ReactDOM.render(
-
-  
   <React.StrictMode>
     
     <BrowserRouter>
-    <App />
+    <App postData = {postData} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
