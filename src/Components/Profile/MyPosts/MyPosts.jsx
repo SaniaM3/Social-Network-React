@@ -14,7 +14,6 @@ const MyPosts = (props) => {
       alert('Hui')
 
     }
-
     return(
       <div className={s.postsBlock}>
         <div>
