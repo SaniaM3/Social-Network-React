@@ -4,6 +4,10 @@ import Post from './Post/Post';
 const MyPosts = (props) => {
 
     let postsElement = props.postData.map( el => <Post message = {el.message} like = {el.likesCounte} />)
+
+    const addPost = () => {
+      alert('Hui')
+    }
     
     return(
       <div className={s.postsBlock}>
@@ -14,7 +18,7 @@ const MyPosts = (props) => {
           <textarea></textarea>
         </div>
         <div>
-          <button>Add Post</button>
+          <button onClick={ addPost }>Add Post</button>
           <button>Remove</button>
           </div>
           
