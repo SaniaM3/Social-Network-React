@@ -1,18 +1,17 @@
-import { useRef } from 'react';
+import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-    let postsElement = props.postData.map( el => <Post message = {el.message} like = {el.likesCounte} />)
+    let postsElement = props.postData.map( el => <Post message = {el.message} like = {el.likesCounte} />);
 
-    const newPostElement = useRef(null);
+    let newPostElement = React.createRef();
 
-    const addPost = () => {
+    let addPost = () => {
 
       let text = newPostElement.current.value;
-      alert('Test')
-
+      alert(text);
     }
     return(
       <div className={s.postsBlock}>
