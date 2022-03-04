@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import state from './redux/state';
+import state, { updateNewPostText } from './redux/state';
 import {addPost} from './redux/state';
 
 
@@ -18,6 +18,7 @@ ReactDOM.render(
     dialogs = {state.dialogsPage.dialogs}
     messages = {state.dialogsPage.messages}
     addPost = {addPost}
+    updateNewPostText = {updateNewPostText}
     />
     </BrowserRouter>
   </React.StrictMode>,
