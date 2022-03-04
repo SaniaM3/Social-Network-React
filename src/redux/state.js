@@ -3,6 +3,7 @@
 import { rerenderEntireTree } from "../render";
 
 const state = {
+    
     profilePage: {
         postData : [
             {id: 1, message: 'Hi', likesCounte: 16},
@@ -10,7 +11,7 @@ const state = {
             {id: 3, message: 'Oh, yeaa', likesCounte: 82},
             {id: 4, message: 'Hello', likesCounte: 11},
           ],
-        newPostText: 'IT-Cama'
+        newPostText: 'IT-Cama',
     },
     dialogsPage: {
         dialogs: [
@@ -28,15 +29,24 @@ const state = {
     
 }
 
-export let addPost = (postMessage) => {
-    debugger;
+window.state = state;
+
+export let addPost = () => {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likesCounte: 0
     };
     state.profilePage.postData.push(newPost)
+    state.profilePage.newPostText = '';
     rerenderEntireTree(state);
 }
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+
 
 export default state;
