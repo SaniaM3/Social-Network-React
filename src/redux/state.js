@@ -24,7 +24,9 @@ let store = {
                 {id: 1, message: 'Hi'},
                 {id: 2, message: 'Hi are you?'},
                 {id: 3, message: 'Fine, Fuck!!!'},
-              ]
+              ],
+              
+        
         },
         
     },
