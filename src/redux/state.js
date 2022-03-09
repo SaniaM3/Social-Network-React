@@ -115,4 +115,3 @@ export let updateNewPostTextActionCreator = (text) => ({
 
 export default store;
 window.store = store;
-............
