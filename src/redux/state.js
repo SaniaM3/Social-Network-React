@@ -131,9 +131,9 @@ export let sendMessageCreator = () => ({
     type: SEND_MESSAGE
 })
 
-export let updateNewMessageBodyCreator = (text) => ({
+export let updateNewMessageBodyCreator = (body) => ({
     type: UPDATE_NEW_MESSAGE_BODY,
-    newText: text
+    body: body
 })
 
 export default store;
