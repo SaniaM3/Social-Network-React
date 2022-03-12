@@ -28,7 +28,7 @@ let store = {
                     likesCounte: 11
                 },
             ],
-            newPostText: 'IT-Cama',
+            newPostText: '',
         },
         dialogsPage: {
             dialogs: [{
@@ -61,7 +61,7 @@ let store = {
                     message: 'Fine, Fuck!!!'
                 },
             ],
-            newMessageBody: ''
+            newMessageBody: ""
         },
 
     },
@@ -82,7 +82,6 @@ let store = {
             likesCounte: 0
         };
         this._state.profilePage.postData.push(newPost)
-        this._state.profilePage.newPostText = '';
         this._callSubscriber(this._state);
     },
     updateNewPostText(newText) {
@@ -90,20 +89,22 @@ let store = {
         this._callSubscriber(this._state);
     },
     dispatch(action) {
+
         if (action.type === ADD_POST) {
             let newPost = {
                 id: 5,
                 message: this._state.profilePage.newPostText,
                 likesCounte: 0
             };
-            this._state.profilePage.postData.push(newPost)
             this._state.profilePage.newPostText = '';
+            this._state.profilePage.postData.push(newPost);
             this._callSubscriber(this._state);
+            
         } else if (action.type === UPDATE_NEW_POST) {
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
         } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
-            this._state.dialogsPage.newPostText = action.body;
+            this._state.dialogsPage.newMessageBody = action.body;
             this._callSubscriber(this._state);
         } else if (action.type === SEND_MESSAGE) {
             const body = this._state.dialogsPage.newMessageBody;

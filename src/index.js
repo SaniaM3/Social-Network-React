@@ -14,10 +14,14 @@ let rerenderEntireTree = (state) => {
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App postData = {store.getState().profilePage.postData} 
+    <App 
+    postData = {store.getState().profilePage.postData} 
+    newPostText = {store.getState().profilePage.newPostText}
     dialogs = {store.getState().dialogsPage.dialogs}
     messages = {store.getState().dialogsPage.messages}
-    dispatch = {store.dispatch.bind(store)}/>
+    dispatch = {store.dispatch.bind(store)}
+    newMessageBody = {store.getState().dialogsPage.newMessageBody}
+    />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
