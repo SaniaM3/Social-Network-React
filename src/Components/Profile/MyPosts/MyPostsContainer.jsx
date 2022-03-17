@@ -20,4 +20,3 @@ const MyPostsContainer = (props) => {
 }
 
 export default MyPostsContainer;
-.......
